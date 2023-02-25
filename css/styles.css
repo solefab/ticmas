@@ -1,0 +1,150 @@
+* {
+    margin: 5px 5px 5px 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-list a {
+    display: flex;
+    font-weight: bolder;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#bienvenida {
+    animation: cambiar-mensaje 2s ease-in-out;
+}
+
+@keyframes cambiar-mensaje {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+}
+
+#bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    align-content: center;
+}
+
+h3 {
+    margin-top: 5em;
+    text-align: center;
+}
+
+intro {
+    margin-top: 5em;
+}
+.col-img{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+#informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+#experiencia {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 2000px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descripcion{
+    text-align: left;
+}
+
+ #habilidades {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.row-hab{
+    margin-top: 5em;
+}
+
+#contacto {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.col {
+    display: inline-flex;
+}
+
+.nav-items {
+    list-style: none;
+    display: inline-flex;
+    text-align: end;
+}
+
+
+#contact {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}

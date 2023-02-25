@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&amp;display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Curriculum vitae</title>
+</head>
+
+<body class="bg-warning-subtle">
+    <nav class="nav bg-info" id="navbar">
+        <ul class="nav-list">
+            <li class="nav-items"><a href="#informacion">Información personal</a></li>
+            <li class="nav-items"><a href="#experiencia">Experiencia</a></li>
+            <li class="nav-items"><a href="#habilidades">Habilidades</a></li>
+            <li class="nav-items"><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="bienvenida">
+        <h1>Te doy la bienvenida <br> a mi curriculum vitae</h1>
+    </section>
+
+    <section id="informacion">
+        <h3 class="intro"> Información personal:</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col col-img">
+                    <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="Foto de perfil" class="foto">
+                </div>
+
+                <div class="col">
+                    <ul>
+                        <li><span class="negrita">Nombre:</span> Marcia Pérez</li>
+                        <li><span class="negrita">Correo electrónico:</span> marcia.perez@example.com</li>
+                        <li><span class="negrita">Teléfono:</span> (+54) 9 11 4646 4902</li>
+                        <li><span class="negrita">Dirección:</span> Avenida Wycliff 2678</li>
+                        <li><span class="negrita">Fecha de nacimiento:</span> 7/2/1972</li>
+                        <li><span class="negrita">Estado civil:Estado civil:</span> casada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <div class="container">
+            <h3 class="intro">Ésta es mi experiencia profesional:</h3>
+            <div class="row">
+                <ul>
+                    <li><span class="negrita">Globant, BA, Argentina Ene 2020 - Actualidad</span></li>
+                    <p class="descripcion">BA (Analista de Negocios) Proyecto: BBVA - GloMo (Global Mobile).
+                        Responsabilidades:</p>
+                    <ul>
+                        <li>Análisis y definición de producto basado en arquitectura de microservicios.</li>
+                        <li>Presentación de mejoras en los procesos de trabajo.</li>
+                        <li>Documentación técnica y de negocios (BRD y FDR).</li>
+                        <li>Análisis de mejoras y valor agregado.</li>
+                        <li>Planificación y seguimiento del roadmap. </li>
+                    </ul>
+                    <li><span class="negrita">Louis Dreyfus Company (LDC), BA, Argentina Ene 2019 - Dic 2019</span></li>
+                    <p class="descripcion">Gerente de Proyecto. Responsabilidades:</p>
+                    <ul>
+                        <li>Análisis de brechas.</li>
+                        <li>Líder del proyecto de migración del sitio web regional al sitio web global.</li>
+                        <li>Análisis de documentos técnicos y de negocios. Encuesta sobre requerimientos de usuario.s
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="container">
+            <h3 class="intro">Estas son mis habilidades:</h3>
+            <div class="row">
+                <ul id="listaHabilidades">
+                    <p class="fw-bold text-start ">Idiomas:</p>
+                    <li id="skill1" onmouseover="mouseOver('skill1')" onmouseout="mouseOut('skill1')">Español (nativo)</li>
+                    <li id="skill2" onmouseover="mouseOver('skill2')" onmouseout="mouseOut('skill2')">Inglés (avanzado)</li>
+                    <li id="skill3" onmouseover="mouseOver('skill3')" onmouseout="mouseOut('skill3')">Italiano (avanzado)</li>
+                    <li id="skill4" onmouseover="mouseOver('skill4')" onmouseout="mouseOut('skill4')">Francés (básico)</li>
+                </ul>
+                
+
+                <ul id="listaHabilidades">
+                    <p class="fw-bold text-start">Tecnologías de la información:</p>
+                    <li id="skill5" onmouseover="mouseOver('skill5')" onmouseout="mouseOut('skill5')">Procesamiento de datos en Excel</li>
+                    <li id="skill6" onmouseover="mouseOver('skill6')" onmouseout="mouseOut('skill6')">Desarrollo front-end: HTML, CSS, JavaScript, Bootstrap</li>
+                    <li id="skill7" onmouseover="mouseOver('skill7')" onmouseout="mouseOut('skill7')">MySQL</li>
+                    <li id="skill8" onmouseover="mouseOver('skill8')" onmouseout="mouseOut('skill8')">JAVA</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h3 class="intro">Para contactarme completá el siguiente formulario:</h3>
+        <div class="container">
+            <form id="formularioContacto" onsubmit="return validarFormulario()">
+                <div class="mb-3 g-3 w-50 mx-auto">
+                    <div>
+                        <label for="formularioNombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="formularioNombre" placeholder="Escribe tu nombre">
+                    </div>
+                    <div>
+                        <label for="formularioEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="formularioEmail" placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div>
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                    </div>
+                    <div class="d-grid gap-2 col-4 mx-auto">
+                        <input class="btn btn-success" type="submit" id="enviar" value="Enviar">
+                    </div>
+                </div>
+            </form>
+            <p id="notificacion"></p>
+        </div>
+    </section>
+    <footer class="bg-info">
+        <p>Hecho por Soledad Fabrizio<br>
+            <span class="footer">- febrero 2023 -</span>
+        </p>
+    </footer>
+
+    <script src="js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
